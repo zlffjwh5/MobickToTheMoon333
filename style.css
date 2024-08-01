@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#gameContainer {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+#gameCanvas {
+    display: block;
+    background-color: #87ceeb;
+}
+
+#controls {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#restartScreen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#restartScreen h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+#restartScreen p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#restartScreen button {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+}
